@@ -1,0 +1,59 @@
+/********************************************************************************
+*Date: 06/08/2004 (keep this date to check versions)
+*Estilos del menú dinamico
+*********************************************************************************/
+
+	.clSlideMenu{ /* All slideMenu2 DIV elements */
+		position:absolute;
+		//font-family:verdana,arial,helvetica;
+		font-family:arial;
+		font-size:8px;
+		overflow:hidden;
+		width:240;
+		height:44;
+	}
+	.clA0{ /* All top level links */
+		color:white;
+        font-family: Arial, Helvetica, san-serif;
+		font-size:12px;
+		text-decoration:none;
+		font-weight:bold;
+	}
+	.clA1{ /* All sub level links */
+		color:white;
+        font-family: Arial, Helvetica, san-serif;
+		font-size:11px;
+		font-weight:bold;
+		text-decoration:none;
+		letter-spacing: 1px;
+	}
+	.clA2{ /* All sub2 level links */
+		color:white;
+		text-decoration:none;
+	}
+	.clA3{ /* All sub3 level links */
+		color:white;
+		text-decoration:none;
+	}
+	.clA4{ /* All sub4 level links */
+		color:green;
+		text-decoration:none;
+	}
+
+	/* NEEDED STYLES */
+	.slideMenuBG{
+		position:absolute;
+		left:0;
+		top:0;
+		z-index:1
+	} /*Aqui se pone la posicion del menu*/
+	.slideMenuText{
+		position:absolute;
+		left:2;
+		top:2;
+		z-index:200;
+	}
+	/* NEEDED ----- This class should be named like this:
+	#NAME_OF_YOUR_MENUcont
+	*/
+	#slideMenucont{position:absolute;	height:600; width:200; visibility:hidden;}

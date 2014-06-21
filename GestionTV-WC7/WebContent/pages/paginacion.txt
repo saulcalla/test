@@ -1,0 +1,45 @@
+<!-- ******************************************************* -->
+<!--                  BOTONES.INICIO                         -->
+<!-- ******************************************************* -->
+<table width="75%" border="0" >
+	<tr>
+		<td align="left">
+			<!-- BOTON ANTERIOR.INICIO -->
+			<logic:equal name="<%=vFormulario%>" property="indice" value="0">
+	  			<input type="button" name="btnAnterior"  value="&nbsp;&nbsp;Anterior&nbsp;&nbsp;" disabled STYLE="border:1px solid white; width:80px" onMouseover="this.style.cursor = 'hand'; style.background='#F0F0F0'; style.border='1px solid gray'" onMouseout="style.background='#CCCCCC'; style.border='1px solid white'">
+			</logic:equal>
+			<logic:notEqual name="<%=vFormulario%>" property="indice" value="0">
+	  			<input type="button" name="btnAnterior"  value="&nbsp;&nbsp;Anterior&nbsp;&nbsp;" onclick="btnAnterior_onclick(<%=vForm%>,'<%=vSend%>');" STYLE="border:1px solid white; width:80px" onMouseover="this.style.cursor = 'hand'; style.background='#F0F0F0'; style.border='1px solid gray'" onMouseout="style.background='#CCCCCC'; style.border='1px solid white'">
+			</logic:notEqual>	
+			<!-- BOTON ANTERIOR.FIN -->
+		</td>
+		<td>
+			<%int idxBtn = 0;%>
+			<!-- PAGINAS.INICIO [1] [2] [3] ... -->
+			<table width="100%" border="0" align="center">
+	 			<tr>
+					<td class="StyleText">  
+						<logic:iterate id="campos" name="<%=vFormulario%>" property="listaPagina">
+							&nbsp;<input type="button" name="btnPage_<%=idxBtn++%>" value="<bean:write name='campos'/>" onclick="a_onclick(<bean:write name='campos'/>,<%=vForm%>,'<%=vSend%>');" STYLE="border:1px solid white; width:20px" onMouseover="this.style.cursor = 'hand'; style.background='#F0F0F0'; style.border='1px solid gray'" onMouseout="style.background='#CCCCCC'; style.border='1px solid white'">
+						</logic:iterate>
+					</td>
+				</tr>
+			</table>
+			<input type="hidden" name="hiddenTotalPaginas" value="<%=idxBtn%>">
+			<!-- PAGINAS.FIN [1] [2] [3] ... -->
+		</td>
+		<td align="right">
+			<!-- BOTON SIGUIENTE.INICIO -->
+			<logic:equal name="<%=vFormulario%>" property="hayProximoBloque" value="si">
+				&nbsp;<input type="button" name="btnSiguiente" value="Siguiente" onclick="btnSiguiente_onclick(<%=vForm%>,'<%=vSend%>');" STYLE="border:1px solid white; width:80px" onMouseover="this.style.cursor = 'hand'; style.background='#F0F0F0'; style.border='1px solid gray'" onMouseout="style.background='#CCCCCC'; style.border='1px solid white'">
+			</logic:equal>
+			<logic:notEqual name="<%=vFormulario%>" property="hayProximoBloque" value="si">
+				&nbsp;<input type="button" name="btnSiguiente" value="Siguiente" disabled STYLE="border:1px solid white; width:80px" onMouseover="this.style.cursor = 'hand'; style.background='#F0F0F0'; style.border='1px solid gray'" onMouseout="style.background='#CCCCCC'; style.border='1px solid white'">
+			</logic:notEqual>
+			<!-- BOTON SIGUIENTE.FIN -->
+		</td>
+	</tr>
+</table>
+<!-- ******************************************************* -->
+<!--                  BOTONES.FIN                            -->
+<!-- ******************************************************* -->

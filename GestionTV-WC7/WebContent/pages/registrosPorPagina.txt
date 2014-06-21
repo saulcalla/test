@@ -1,0 +1,31 @@
+<!-- INICIO TABLA SELECT ITEM POR PAGINACION-->
+<table class="StyleTabla_75">
+	<tr align="right">
+    	<td class="StyleTextoTabla">Registros por Página : 
+        	<select name="SelectItemsPorPagina" onchange="selectItemsPorPagina_onchange(<%=vForm%>,'<%=vSend%>');">
+        	   	<option value="10">10</option>
+			    <option value="15">15</option> 
+         		<option value="20">20</option> 
+         		<option value="30">30</option> 
+	         	<option value="35">35</option>
+	         	<option value="40">40</option>
+	         	<option value="45">45</option> 
+         		<option value="50">50</option> 
+      		</select>
+		</td>
+	</tr>
+</table>
+	
+<!-- FIN TABLA SELECT ITEM POR PAGINACION-->
+
+<!-- TOTAL REGISTROS.INICIO -->
+<table class="StyleTabla_75">
+	<tr>
+		<td class="StyleTextoTabla">Total Registros :&nbsp;<bean:write name="<%=vFormulario%>" property="totalRegistros"/></td>
+	</tr>
+</table>
+<!-- TOTAL REGISTROS.FIN -->
+
+<br>	
+	
+	

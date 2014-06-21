@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomcatProjectProperties>
+    <rootDir>/</rootDir>
+    <exportSource>false</exportSource>
+    <reloadable>true</reloadable>
+    <redirectLogger>false</redirectLogger>
+    <updateXml>true</updateXml>
+    <warLocation>C:\Archivos de programa\Apache Software Foundation\Tomcat 5.5\webapps\GestionTV.war</warLocation>
+    <extraInfo></extraInfo>
+    <webPath>/GestionTV</webPath>
+</tomcatProjectProperties>

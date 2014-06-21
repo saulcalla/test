@@ -1,0 +1,600 @@
+/*
+TIPOS DE LETRAS
+Courier New, Courier, mono
+Times New Roman, Times, serif
+Arial, Helvetica, sans-serif
+Georgia, Times New Roman, Times, serif
+Verdana, Arial, Helvetica, sans-serif
+Geneva, Arial, Helvetica, san-serif
+*/
+
+	.Mayuscula { text-transform: uppercase }
+
+	/* Estilo para tabla */
+	.StyleTabla { border-style: ridge;
+              border-color:#3333CC;
+              border-top-width: 5px;
+              border-right-width: 5px;
+              border-bottom-width: 5px;
+              border-left-width: 5px;
+              background: #990000;
+              font-weight: bold;
+              height: 0%;
+              width: 90%
+            }
+
+	.StyleTabla-Encabezado { border-style: ridge;
+              border-color:#3333CC;
+              border-top-width: 5px;
+              border-right-width: 5px;
+              border-bottom-width: 5px;
+              border-left-width: 5px;
+              background: #990000;
+              font-weight: bold;
+              font-size: 12px;              
+              height: 0%;
+              width: 90%
+            }
+
+
+	/* Estilos para secciones */
+	   .StyleHead {  color: #336699;
+              background: #FFFFDE;
+              padding-top: 0px;
+              padding-bottom: 0px;
+              text-align: right;
+              font-family: Arial, Helvetica, san-serif;
+              font-size: 16px;
+              font-weight: bold;
+         }
+
+	   .Stylebody {color:#C0C0C0; 
+		      background-color: #FFFFDE; 
+		      padding-top: 0px; 
+		      padding-bottom: 0px; 
+		      padding-right: 10px; 
+		      padding-left: 10px; 
+		      text-align: right;
+	          font-family: arial;
+		      font-size: 18px; 
+		      font-weight:bold;
+         }
+
+	   .Stylefoot { color: #990000;
+              background: #990000; 
+              padding-top: 0px;
+              padding-bottom: 0px;
+              text-align: right;
+              font-family: Times New Roman, Times, serif;
+              font-size: 12px;
+              font-weight: normal;
+         }
+
+  /*Estilos de Resultados de Busqueda*/
+	       }
+	      .tablaresbusqueda  { 
+		      background-color: #c0c0c0;
+		      border-style: outset; 
+		      border-top-width: 4px; 
+		      border-right-width: 4px;
+		      border-bottom-width: 4px; 
+		      border-left-width: 4px; 
+		      height: 150px;
+	 	      width: 550px;
+	       }
+	
+	      .VectResultTit  { 
+		      color: #336699; 
+		      background-color: #FFFFDE; 
+		      padding-top: 3px; 
+		      padding-bottom: 3px; 
+		      padding-right: 10px; 
+		      padding-left: 10px; 
+		      text-align: center;
+		      font-family: arial;
+		      font-size: 13px; 
+		      font-weight: bold;
+	       }
+
+	      .VectResultcampos  { 
+		      color: #ffffff; 
+		      background-color: #990000; 
+		      padding-top: 0px; 
+		      padding-bottom: 0px; 
+		      padding-right: 10px; 
+		      padding-left: 10px; 
+		      text-align: center;
+		      font-family: arial;
+		      font-size: 11px; 
+		      font-weight: bold
+	       }
+	
+	      .VectResultDat1  { 
+		      color: #336699; 
+		      background-color: #efefef; 
+		      padding-top: 0px; 
+	 	      padding-bottom: 0px; 
+		      padding-right: 5px; 
+		      padding-left: 5px; 
+		      text-align: left;
+		      font-family: arial;
+		      font-size: 10px; 
+		      font-weight: normal
+			  
+           }
+            .VectResultDatOC  { 
+		      color: #336699; 
+		      background-color: #efefef; 
+		      padding-top: 0px; 
+	 	      padding-bottom: 0px; 
+		      padding-right: 10px; 
+		      padding-left: 10px; 
+		      font-family: arial;
+		      font-size: 10px; 
+		      font-weight: normal
+			  
+           }
+           .VectResultDat_tre  { 
+		      color: #336699; 
+		      background-color: #efefef; 
+		      padding-top: 0px; 
+	 	      padding-bottom: 0px; 
+		      padding-right: 10px; 
+		      padding-left: 10px; 
+		      text-align: left;
+		      font-family: arial;
+		      font-size: 11px; 
+		      font-weight: normal
+			  
+           }
+           
+           
+           .VectResultRegalos  { 
+		      color: #336699; 
+		      background-color: #efefef; 
+		      padding-top: 0px; 
+	 	      padding-bottom: 0px; 
+		      padding-right: 10px; 
+		      padding-left: 10px; 
+		      text-align: left;
+		      font-family: arial;
+		      font-size: 10px; 
+		      font-weight: normal;
+		      height: 0%;
+              width: 100%
+			  
+           }
+           
+
+		   
+		   .VectResultDatBT_TV  { 
+		      color: #336699; 
+		      background-color: #efefef; 
+		      padding-top: 0px; 
+	 	      padding-bottom: 0px; 
+		      padding-right: 10px; 
+		      padding-left: 10px; 
+		      text-align: left;
+		      font-family: arial;
+		      font-size: 14px; 
+		      font-weight: normal			  
+			  
+           }
+		   
+           
+	      .VectResultDat2  { 
+		      color: #336699; 
+		      background-color: #dddddd; 
+		      padding-top: 0px; 
+		      padding-bottom: 0px; 
+		      padding-right: 10px; 
+		      padding-left: 10px; 
+		      text-align: left;
+		      font-family: arial;
+		      font-size: 10px; 
+		      font-weight: normal
+	       }
+	       
+	       .VectResultDat3  { 
+		      color: #336699; 
+		      background-color: #efefef; 
+		      padding-top: 0px; 
+		      padding-bottom: 0px; 
+		      padding-right: 10px; 
+		      padding-left: 10px; 
+		      text-align: left;
+		      font-family: arial;
+		      font-size: 12px; 
+		      font-weight: normal
+	       }
+
+	      .VectResultPagina  { 
+		      color: #336699; 
+		      background-color: #efefef; 
+		      padding-top: 0px; 
+		      padding-bottom: 0px; 
+		      padding-right: 10px; 
+		      padding-left: 10px; 
+		      text-align: right;
+		      font-family: arial;
+		      font-size: 9px; 
+	          font-weight: normal
+    	   }
+		.StyleText {  
+	   		  color: #336699;
+              background: #FFFFDE;
+              padding-top: 0px;
+              padding-bottom: 0px;
+              text-align: left;
+              font-family: Arial, Helvetica, san-serif;
+              font-size: 12px;
+              font-weight: bold;
+         }
+
+         .styleTbla   { border-style: ridge;
+              border-color: #ffffff;
+              border-top-width: 5px;
+              border-right-width: 5px;
+              border-bottom-width: 5px;
+              border-left-width: 5px;
+              background: #ffffff;
+              height: 0%;
+              width: 550px
+              }
+
+         .styleHad {     color: #FFFFFF;
+              background: #990000;
+              padding-top: 0px;
+              padding-bottom: 0px;
+              text-align: center;
+              font-family: Arial, Helvetica, san-serif;
+              font-size: 14px;
+              font-weight: bold
+             }
+             
+        .styleContent   { color: #000000;
+              background: #330099;
+              padding-top: 0px;
+              padding-bottom: 0px;
+              text-align: center;
+              font-family: Times New Roman, Times, serif;
+              font-size: 20px;
+              font-weight: normal
+             }
+
+         .styleFot   { color: #FFFFFF;
+              background: #336666; 
+              padding-top: 0px;
+              padding-bottom: 0px;
+              text-align: right;
+              font-family: Times New Roman, Times, serif;
+              font-size: 10px;
+              font-weight: normal
+             }
+
+	/* Estilos para secciones */
+	   .StyleHead {  color: #336699;
+              background: #FFFFDE;
+              padding-top: 0px;
+              padding-bottom: 0px;
+              text-align: right;
+              font-family: Arial, Helvetica, san-serif;
+              font-size: 16px;
+              font-weight: bold;
+         }
+	   .StyleHead_left {  color: #336699;
+              background: #FFFFDE;
+              padding-top: 0px;
+              padding-bottom: 0px;
+              text-align: left;
+              font-family: Arial, Helvetica, san-serif;
+              font-size: 16px;
+              font-weight: bold;
+         }
+        .StyleNota {  color: #336699;
+              background: #FFFFDE;
+              padding-top: 0px;
+              padding-bottom:0px;
+              padding-left:35px;
+              text-align: left;
+              font-family: Arial, Helvetica, san-serif;
+              font-size: 12px;
+              font-weight: bold;
+         }
+	   .StyleHead_center {  color: #336699;
+              background: #FFFFDE;
+              padding-top: 0px;
+              padding-bottom: 0px;
+              text-align: center;
+              font-family: Arial, Helvetica, san-serif;
+              font-size: 16px;
+              font-weight: bold;
+         }
+
+	   .Stylebody {color:#C0C0C0; 
+		      background-color: #FFFFDE; 
+		      padding-top: 0px; 
+		      padding-bottom: 0px; 
+		      padding-right: 10px; 
+		      padding-left: 10px; 
+		      text-align: right;
+	          font-family: arial;
+		      font-size: 18px; 
+		      font-weight:bold;
+         }
+       .StyleTabla_75 { border-style: ridge;
+              border-top-width: 5px;
+              border-right-width: 5px;
+              border-bottom-width: 5px;
+              border-left-width: 5px;
+              background: #990000;
+              font-weight: bold;
+              height: 0%;
+              width: 75%;
+            }  
+        .StyleTabla_TodasVentas { border-style: ridge;
+              border-top-width: 5px;
+              border-right-width: 5px;
+              border-bottom-width: 5px;
+              border-left-width: 5px;
+              background: #990000;
+              font-weight: bold;
+              height: 0%;
+              width: 95%;
+            } 
+        .StyleTabla_DetalleProducto { border-style: ridge;
+              border-top-width: 5px;
+              border-right-width: 5px;
+              border-bottom-width: 5px;
+              border-left-width: 5px;
+              background: #990000;
+              font-weight: bold;
+              height: 0%;
+              width: 13%;
+            } 
+         .StyleTabla_EstadosOC { border-style: ridge;
+              border-top-width: 0px;
+              border-right-width: 5px;
+              border-bottom-width: 0px;
+              border-left-width: 5px;
+              background: #990000;
+              font-weight: bold;
+              height: 0%;
+              width: 95%;
+            } 
+             .StyleTabla_EstadosOCTop { border-style: ridge;
+              border-top-width: 0px;
+              border-right-width: 5px;
+              border-bottom-width: 5px;
+              border-left-width: 5px;
+              background: #990000;
+              font-weight: bold;
+              height: 0%;
+              width: 95%;
+            } 
+       .StyleTabla_regalos { border-style: ridge;
+              border-top-width: 5px;
+              border-right-width: 5px;
+              border-bottom-width: 5px;
+              border-left-width: 5px;
+              background: #990000;
+              font-weight: bold;
+              height: 0%;
+              width: 140%
+            }  
+            
+
+            
+         .StyleTabla_BT_TV { border-style: ridge;
+              border-top-width: 5px;
+              border-right-width: 5px;
+              border-bottom-width: 5px;
+              border-left-width: 5px;
+              background: #990000;
+              font-weight: bold;
+              font-size: 18px;
+              width: 100%;
+            }  
+            
+         StyleTabla { border-style: ridge;
+              border-color:#3333CC;
+              border-top-width: 5px;
+              border-right-width: 5px;
+              border-bottom-width: 5px;
+              border-left-width: 5px;
+              background: #990000;
+              font-weight: bold;
+              height: 0%;
+              width: 75%;
+            }
+       .StyleTextoTabla {  
+	   		  color: #ffffff;
+              background: #990000;
+              padding-top: 0px;
+              padding-bottom: 0px;
+              text-align: left;
+              font-family: Arial, Helvetica, san-serif;
+              font-size: 12px;
+              font-weight: bold;
+         }
+             
+          .StyleTextoTablaEstadoOC {  
+	   		  color: #ffffff;
+              background: #990000;
+              padding-top: 0px;
+              padding-bottom: 0px;
+              text-align:center;
+              font-family: Arial, Helvetica, san-serif;
+              font-size: 12px;
+              font-weight: bold;
+         }
+         .StyleTextoTablaEstadoOCHeader {  
+	   		  color: #ffffff;
+              background: #990000;
+              padding-top: 0px;
+              padding-bottom: 0px;
+              padding-right: 5px;
+              text-align:right;
+              font-family: Arial, Helvetica, san-serif;
+              font-size: 10px;
+              font-weight: bold;
+         }
+         .StyleTextoTablaRegalos {  
+	   		  color: #ffffff;
+              background: #990000;
+              padding-top: 0px;
+              padding-bottom: 0px;
+              text-align: left;
+              font-family: Arial, Helvetica, san-serif;
+              font-size: 12px;
+              font-weight: bold;
+              height: 0%;
+              width: 140%
+         }
+         
+         VectResultDat1_centro  { 
+		      color: #336699; 
+		      background-color: #efefef; 
+		      padding-top: 0px; 
+	 	      padding-bottom: 0px; 
+		      padding-right: 10px; 
+		      padding-left: 10px; 
+		      text-align: center;
+		      font-family: arial;
+		      font-size: 10px; 
+		      font-weight: normal
+           }     
+	   .StylePie {  color: #336699;
+              background: #FFFFDE;
+              padding-top: 0px;
+              padding-bottom: 0px;
+              text-align: left;
+              font-family: Arial, Helvetica, san-serif;
+              font-size: 12px;
+              font-weight: bold;
+         }
+	   .StyleTotalItem {  color: #336699;
+              background: #FFFFDE;
+              padding-top: 0px;
+              padding-bottom: 0px;
+              text-align: right;
+              font-family: Arial, Helvetica, san-serif;
+              font-size: 12px;
+              font-weight: bold;
+         }
+
+	   .StyleText {  color: #336699;
+              background: #FFFFDE;
+              padding-top: 0px;
+              padding-bottom: 0px;
+              text-align: left;
+              font-family: Arial, Helvetica, san-serif;
+              font-size: 12px;
+              font-weight: bold;
+         }
+
+	   .StyleText_right {  color: #336699;
+              background: #FFFFDE;
+              padding-top: 0px;
+              padding-bottom: 0px;
+              font-family: Arial, Helvetica, san-serif;
+              font-size: 12px;
+              font-weight: bold;
+              text-align: right;
+         }
+	   .StyleText_right_fecha {  color: #336699;
+              background: #FFFFDE;
+              padding-top: 0px;
+              padding-bottom: 0px;
+              font-family: Arial, Helvetica, san-serif;
+              font-size: 16px;
+              font-weight: bold;
+              text-align: right;
+         }
+         
+	   .Stylefoot { color: #990000;
+              background: #990000; 
+              padding-top: 0px;
+              padding-bottom: 0px;
+              text-align: right;
+              font-family: Times New Roman, Times, serif;
+              font-size: 12px;
+              font-weight: normal;
+         }
+	    .VctResultDato_Numerico{ 
+		      color: #336699; 
+		      background-color: #efefef; 
+		      padding-top: 0px; 
+	 	      padding-bottom: 0px; 
+		      padding-right: 5px; 
+		      padding-left: 5px; 
+		      text-align: right;
+		      font-family: arial;
+		      font-size: 10px; 
+		      font-weight: normal;
+         }
+
+	    .VctResultDato_Char{ 
+		      color: #336699; 
+		      background-color: #efefef; 
+		      padding-top: 0px; 
+	 	      padding-bottom: 0px; 
+		      padding-right: 5px; 
+		      padding-left: 5px; 
+		      text-align: left;
+		      font-family: arial;
+		      font-size: 10px; 
+		      font-weight: normal;
+         }
+
+	    .VctResultDato_Normal{ 
+		      color: #336699; 
+		      background-color: #efefef; 
+		      padding-top: 0px; 
+	 	      padding-bottom: 0px; 
+		      padding-right: 5px; 
+		      padding-left: 5px; 
+		      text-align: center;
+		      font-family: arial;
+		      font-size: 10px; 
+		      font-weight: normal;
+         }
+	   .StylePrint_right_Small { 
+			  color: "000000"; 
+		      background-color: "ffffff";	
+		      padding-top: 1px; 
+	 	      padding-bottom: 1px; 
+		      padding-right: 0px; 
+		      padding-left: 0px; 
+		      text-align: right;
+		      font-family: arial;
+		      font-size: 9px; 
+		      font-weight: normal;
+		
+		 } 
+ 		.StylePrint_left_Small { 
+              color: "000000"; 
+		      background-color: "ffffff";   
+		      padding-top: 1px; 
+	 	      padding-bottom: 1px; 
+		      padding-right: 0px; 
+		      padding-left: 0px; 
+		      text-align: left;
+		      font-family: arial;
+		      font-size: 9px; 
+		      font-weight: normal;
+		
+		 } 	
+		.StylePrint_center_Small { 
+              color: "000000"; 
+		      background-color: "ffffff";
+		      padding-top: 1px; 
+	 	      padding-bottom: 1px; 
+		      padding-right: 0px; 
+		      padding-left: 0px; 
+		      text-align: center;
+		      font-family: arial;
+		      font-size: 9px; 
+		      font-weight: normal;
+		
+		 } 	

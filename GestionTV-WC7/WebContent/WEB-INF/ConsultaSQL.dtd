@@ -1,0 +1,21 @@
+<!ELEMENT ConsultaSQL (NombreProyecto)+>
+
+<!ELEMENT NombreProyecto (NombreBean)+>
+<!ATTLIST NombreProyecto
+        nombre ID #REQUIRED
+>
+
+<!ELEMENT NombreBean (Instruccion01?, Instruccion02, Instruccion03, Instruccion04)+>
+<!ATTLIST NombreBean
+        valor CDATA #REQUIRED
+>
+
+<!ELEMENT Instruccion01 (#PCDATA)>
+
+<!ELEMENT Instruccion02 (#PCDATA)>
+
+<!ELEMENT Instruccion03 (#PCDATA)>
+
+<!ELEMENT Instruccion04 (#PCDATA)>
+
+

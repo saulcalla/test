@@ -1,0 +1,142 @@
+/* 
+Archivo: e1024x768.css
+Autor  : Miguel Corona Elgueta
+Período: 2002 - 2003
+*/
+<style type="text/css">
+<!--
+body							{ background-color: #ffffff}
+.menuIzq_body					{ background-color: #000000}
+.centro_body					{ background-color: #FFFFDE}
+.body_centro { background-color: #ffffde}
+
+td								{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px}
+.ObjError						{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold;	color: #ff0000 }
+.ObjLabel						{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold;	color: #000000 }
+.ObjSelect						{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 }
+.ObjText						{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 }
+.ObjTextMonto  				    { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 ; text-align: right}
+.ObjTitulo						{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold;	color: #FFFFFF ; background-color: #408080}
+.Credito_ObjCol1				{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #ffffff ; background-color: #408080}
+.Credito_ObjCol2				{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 ; background-color: #ffffff}
+.ObjMensajeOK					{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold;	color: #000000 }
+.filaH							{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold;	color: #FFFFFF ; background-color: #408080}
+.filaT							{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold; color: #000000 ; background-color: #E9E9E9}
+.filaR							{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold; color: red ;text-decoration: none ; background-color: #E9E9E9}
+.filaRed						{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold; color: red ;text-decoration: none }
+.filaH_font8					{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size:  8px; font-weight:   bold;	color: #FFFFFF ; background-color: #408080}
+.filaD							{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; color: #000000 ; background-color: #ffffff}
+.filaD2							{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; color: #000000 ; background-color: #ffffff}
+.filaD3                         { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; color: #000000 }
+.filaD_font8					{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size:  8px; font-weight: normal; color: #000000 ; background-color: #ffffff}
+.ObjFecha						{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold;	color: #000000 }
+.fontChico						{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 }
+.fontSelect						{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 }
+.noEditableHeader				{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bolder; color: #FFFFFF ; background-color: #408080}
+.noEditableBody					{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bolder; color: #000000 ; background-color: #FFFFFF}
+.tdHeader						{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold; color: #FFFFFF ; background-color: #408080}
+.fontSitio						{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 }
+.fontDatosMaestros				{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 }
+.DatosMaestrosObjSelect			{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 ; width:203px}
+.DatosMaestrosObjSelect2		{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 }
+.DatosMaestrosObjText			{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 }
+.DatosMaestrosObjTextNoEditable { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 }
+.DatosMaestrosObjTdHeader		{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #FFFFFF ; background-color: #408080}
+.DatosMaestrosObjLabel			{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 }
+.clt_datosPartlab_objLineaEstado{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size:  9px; font-weight:   bold; color: #000000 ; background-color: #cccccc; width: 800px }
+.Listado_filaD					{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px}
+.detalle_productos_objFormulario{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #ff0000 }
+.Poderes_FilaH					{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bolder; color: #FFFFFF ; background-color: #408080}
+.Poderes_FilaD					{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px}
+.MensajeError					{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #FF0000 }
+.MensajeOk						{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 }
+.MenuIzquierdo_ObjLink			{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 }
+.CartolaNoPos_filaD				{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px}
+.credito_filaH					{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold; color: #FFFFFF ; background-color: #408080}
+.LoginObjTitulo					{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 18px; font-weight:   bold; color: #FFFFFF ; background-color: #408080}
+.LoginfilaH						{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold; color: #FFFFFF ; background-color: #408080}
+.LoginfilaD						{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-weight: bolder; color: #000000 ; background-color: #999999}
+.LoginObjPie					{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-weight:   bold; color: #000000 }
+.ObjHora						{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold; color: #000000 ; background-color: #CCCCCC;text-align: center}
+.ObjLetra						{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight:    bold;color: #000000 ; background-color: #ffffff}
+.errMessageObjTit               { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-weight:   bold; color: #FFFFFF ; background-color: #408080}
+.errMessageObjPie               { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-weight:   bold; color: #000000 }
+.errMessageObjMes               { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold; color: #000000 }
+.objMensajeError				{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #FF0000 }
+.objMensajeOk					{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 }
+.objMensajeTitulo				{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold; color: #ffffff ; background-color: #408080;text-align: center}
+.objLabelCodArea				{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold; color: #000000 ; background-color: #cccccc;text-align: center}
+.objBlinkText                   { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold; color: #FF0000 ; text-align: center; border: #ffffff}
+.objBloqueado					{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; color: #000000 ; background-color: #ffffff}
+.c2k_mainheaderObjLabel			{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold;	color: #000000 }
+.c2k_mainheaderObjSelect		{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 ; width: 157px}
+.c2k_mainheaderObjText			{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 ; width: 155px}
+.c2k_mainheaderObjTextDV		{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 ; width: 20px}
+.clt_derintermedio_filaH		{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold;	color: #FFFFFF ; background-color: #408080}
+.clt_derintermedio_filaD	    { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal;  color: #000000 ; background-color: #ffffff}
+.avalmodificar_ObjSelect		{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 ; width:203px}
+.avalmodificar_ObjText			{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 ; width:201px}
+.avalmodificar_ObjTextFecha		{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 ; width:178px}
+.avalmodificar_ObjTextFono  	{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 ; width:163px}
+.avalmodificar_ObjTextFecSis    { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold; color: #000000 ; background-color: #cccccc;text-align: left; width:203px}
+.avalmodificar_ObjTextRut		{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 ; width:160px}
+.avalmodificar_ObjTextDV		{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 }
+.podmodificar_ObjText			{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 ; width:110px}
+
+.clt_menuizquierdo_objTitulo_align { text-align: center }
+.clt_menuizquierdo_objTitulo    { font-family: Arial, Helvetica, sans-serif; font-size:  11px; font-weight: bold; color: #FFFFFF}
+.clt_menuizquierdo_objLetra     { font-family: Arial, Helvetica, sans-serif; font-size:  11px; font-weight: bold; color: #FFFFFF;background-color: #000000}}
+
+
+/* AUTOR.MCORONAE.03ABRIL2003_INICIO */
+.clt_tipoDisponible_filaD        { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #000000 ; background-color: #999999}
+.clt_tipoDisponible_ObjSelectTipo{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #000000 ; width:100px; text-align: center;  text-transform: none}
+.clt_tipoDisponible_ObjOption    { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #000000 ; text-align: right;  text-transform: none}
+.clt_tipoDisponible_ObjSelectMes { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #000000 ; width:50px}
+.clt_tipoDisponible_ObjTextFecha { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold;color: #000000 ; width:100px; text-align: center ; background-color: #cccccc}
+.clt_tipoDisponible_objBlinkText { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   none; color: #000000 ; text-align: left; border: #999999 ; background-color: #999999}
+/* AUTOR.MCORONAE.03ABRIL2003_FIN */
+.manProcedimiento_txtMenu{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold; color: #FFFFFF ; background-color: #408080}
+
+/* AUTOR.MCORONAE.08AGOSTO2003_INICIO */
+.clt_ajustelca_objTexPro		{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:   bold; color: #0000FF ; background-color: #CCCCCC;text-align: center}
+.clt_ajustelca_objSelect		{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 ; width:170px}
+.clt_ajustelca_objTextMonto 	{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;						color: #000000 ; width:170px; text-align: right}
+/* AUTOR.MCORONAE.08AGOSTO2003_FIN */
+
+.titulo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #000000;
+}
+.texto {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #000000;
+}
+.subtitulo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000;
+}
+	/* Estilo para tabla */
+	.StyleTablaLogoSistema {
+	          color: #000000;		      
+              border-top-width: 0%;
+              border-right-width: 0%;
+              border-bottom-width: 0%;
+              border-left-width: 0%;
+              background: #FFFFDE;               
+              text-align: left;
+		      font-family: arial;
+              font-size: 12px;
+              font-weight: bold;
+              height: auto;
+              width: 75%;
+      }
+
+-->
+</style>

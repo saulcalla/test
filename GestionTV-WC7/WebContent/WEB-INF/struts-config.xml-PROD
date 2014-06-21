@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+     <data-sources>
+      
+ 	<!-- ========== Data Source Configuration =============================== -->
+     <!-- CONEXION BD -->    	
+         <!-- CONEXION BD -->    	
+         <data-source key="Oracle">
+            <set-property property="password" value="usr_bocorp" />
+            <set-property property="minCount" value="10" />
+            <set-property property="maxCount" value="100" />
+            <set-property property="user" value="bocorp_usr" />
+            <set-property property="driverClass" value="oracle.jdbc.driver.OracleDriver" />
+            <set-property property="description" value="PEGASUS" />
+            <set-property property="url" value="jdbc:oracle:thin:@10.0.150.220:1531:excan02" />
+            <set-property property="readOnly" value="false" />
+            <set-property property="autoCommit" value="false" />
+            <set-property property="loginTimeout" value="3600" />
+        </data-source>
+      
+
+        <data-source key="Db2">
+            <set-property property="password" value="db2inst1" />
+            <set-property property="minCount" value="10" />
+            <set-property property="maxCount" value="100" />
+            <set-property property="user" value="db2inst1" />
+            <set-property property="driverClass" value="COM.ibm.db2.jdbc.net.DB2Driver" />
+            <set-property property="description" value="DB2Pool" />
+            <set-property property="url" value="jdbc:db2://10.12.17.12:6789/mall" />
+            <set-property property="readOnly" value="false" />
+            <set-property property="autoCommit" value="false" />
+            <set-property property="loginTimeout" value="3600" />
+        </data-source>     
+        
+		<data-source key="BOGCP">
+            <set-property property="password" value="CREDI2000" />
+            <set-property property="minCount" value="10" />
+            <set-property property="maxCount" value="100" />
+            <set-property property="user" value="OPS$CREDI_ADM" />
+            <set-property property="driverClass" value="oracle.jdbc.driver.OracleDriver" />
+            <set-property property="description" value="BD_GCP" />
+            <set-property property="url" value="jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=a287p_vip)(PORT=1561))(ADDRESS=(PROTOCOL=TCP)(HOST=a288p_vip)(PORT=1561))(FAILOVER=on)(LOAD_BALANCE=off))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=excrt1)))" />       
+            <set-property property="readOnly" value="false" />
+            <set-property property="autoCommit" value="false" />
+            <set-property property="loginTimeout" value="3600" />
+        </data-source>
+        
+        <data-source key="BO">
+            <set-property property="password" value="PILOTO" />
+            <set-property property="minCount" value="10" />
+            <set-property property="maxCount" value="100" />
+            <set-property property="user" value="TEST_BACK" />
+            <set-property property="driverClass" value="oracle.jdbc.driver.OracleDriver" />
+            <set-property property="description" value="BD_GCP" />
+            <set-property property="url" value="jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=a287p_vip)(PORT=1561))(ADDRESS=(PROTOCOL=TCP)(HOST=a288p_vip)(PORT=1561))(FAILOVER=on)(LOAD_BALANCE=off))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=excrt1)))" />       
+            <set-property property="readOnly" value="false" />
+            <set-property property="autoCommit" value="false" />
+            <set-property property="loginTimeout" value="3600" />
+        </data-source>  
+        
+        <data-source key="OracleBT">
+            <set-property property="password" value="bigt_usr" />
+            <set-property property="minCount" value="10" />
+            <set-property property="maxCount" value="100" />
+            <set-property property="user" value="bigt_usr" />
+            <set-property property="driverClass" value="oracle.jdbc.driver.OracleDriver" />
+            <set-property property="description" value="BTP" />
+            <set-property property="url" value="jdbc:oracle:thin:@10.0.150.225:1521:EXRTL2" />
+            <set-property property="readOnly" value="false" />
+            <set-property property="autoCommit" value="false" />
+            <set-property property="loginTimeout" value="3600" />
+        </data-source>                
+        
+        <data-source key="RMC">
+            <set-property property="password" value="cambio" />
+            <set-property property="minCount" value="10" />
+            <set-property property="maxCount" value="100" />
+            <set-property property="user" value="cammerc_usr" />
+            <set-property property="driverClass" value="oracle.jdbc.driver.OracleDriver" />
+            <set-property property="description" value="BD_RMC" />
+            <set-property property="url" value="jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=a287p_vip)(PORT=1561))(ADDRESS=(PROTOCOL=TCP)(HOST=a288p_vip)(PORT=1561))(FAILOVER=on)(LOAD_BALANCE=off))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=excrt1)))" />       
+            <set-property property="readOnly" value="false" />
+            <set-property property="autoCommit" value="false" />
+            <set-property property="loginTimeout" value="3600" />
+        </data-source>   
+    </data-sources>
+    
+    <!-- ========== Form Bean Definitions ================================== -->
+    <form-beans>
+        <form-bean name="menuForm" type="cl.ripley.GestionTV.struts.form.MenuForm" />
+        <form-bean name="visitasForm" type="cl.ripley.GestionTV.struts.form.VisitasForm" />
+        <form-bean name="pedidosForm" type="cl.ripley.GestionTV.struts.form.PedidosForm" />
+        <form-bean name="productoconstockForm" type="cl.ripley.GestionTV.struts.form.ProductoConStockForm" />
+        <form-bean name="productosinstockForm" type="cl.ripley.GestionTV.struts.form.ProductoSinStockForm" />
+        <form-bean name="todosproductosForm" type="cl.ripley.GestionTV.struts.form.TodosProductosForm" />
+        <form-bean name="bundlesForm" type="cl.ripley.GestionTV.struts.form.BundlesForm" />
+        <form-bean name="tarjetaripleyForm" type="cl.ripley.GestionTV.struts.form.TarjetaRipleyForm" />
+        <form-bean name="tarjetabancariaForm" type="cl.ripley.GestionTV.struts.form.TarjetaBancariaForm" />
+        <form-bean name="todasventasForm" type="cl.ripley.GestionTV.struts.form.TodasVentasForm" />
+        <form-bean name="detalleproductoForm" type="cl.ripley.GestionTV.struts.form.DetalleProductoForm" />
+        <form-bean name="reporteregaloForm" type="cl.ripley.GestionTV.struts.form.ReporteRegaloForm" />
+        <form-bean name="fonocompraForm" type="cl.ripley.GestionTV.struts.form.FonoCompraForm" />
+        <form-bean name="promocionesForm" type="cl.ripley.GestionTV.struts.form.PromocionesForm" />
+        <form-bean name="asociacionesForm" type="cl.ripley.GestionTV.struts.form.AsociacionesForm" />
+        <form-bean name="productosForm" type="cl.ripley.GestionTV.struts.form.ProductosForm" />
+        <form-bean name="catalogosForm" type="cl.ripley.GestionTV.struts.form.CatalogosForm" />
+        <form-bean name="zonasForm" type="cl.ripley.GestionTV.struts.form.ZonasForm" />
+        <form-bean name="cargasForm" type="cl.ripley.GestionTV.struts.form.CargasForm" />
+        <form-bean name="popupForm" type="cl.ripley.GestionTV.struts.form.PopupForm" />
+        <form-bean name="muestralogForm" type="cl.ripley.GestionTV.struts.form.MuestraLogForm" />
+        <form-bean name="clientescarForm" type="cl.ripley.GestionTV.struts.form.ClientescarForm" />
+	    <form-bean name="bancoForm" type="cl.ripley.GestionTV.struts.form.VtaBancoForm" />
+        <form-bean name="vtafonocompraForm" type="cl.ripley.GestionTV.struts.form.VtaFonoCompraForm" />
+        <form-bean name="tarjetaripleydatosForm" type="cl.ripley.GestionTV.struts.form.TarjetaRipleyDatosForm" />
+        <form-bean name="productosRChannelForm" type="cl.ripley.GestionTV.struts.form.ProductosRChannelForm" />        
+        <form-bean name="cargaStockBTForm" type="cl.ripley.GestionTV.struts.form.CargaStockBTForm" />
+        <form-bean name="ReporteStock_BT_TvForm" type="cl.ripley.GestionTV.struts.form.ReporteStock_BT_TvForm" />
+        <form-bean name="savReporteForm" type="cl.ripley.GestionTV.struts.form.SavReporteForm" />
+        <form-bean name="activacionGCPForm" type="cl.ripley.GestionTV.struts.form.ActivacionGCPForm" />
+        <form-bean name="actualizaFechaBoletaForm" type="cl.ripley.GestionTV.struts.form.ActualizaFechaBoletaForm" />
+        <form-bean name="auditoriaGCPForm" type="cl.ripley.GestionTV.struts.form.AuditoriaGCPForm" />
+        <form-bean name="reporteRMCForm" type="cl.ripley.GestionTV.struts.form.ReporteRMCForm" />
+        <form-bean name="busquedaRMCForm" type="cl.ripley.GestionTV.struts.form.BusquedaRMCForm" />
+        <form-bean name="aperturaCierreGCPForm" type="cl.ripley.GestionTV.struts.form.AperturaCierreGCPForm" />
+        <form-bean name="cierreActivacionGCPForm" type="cl.ripley.GestionTV.struts.form.CierreActivacionGCPForm" />
+        <form-bean name="ventasXusuarioForm" type="cl.ripley.GestionTV.struts.form.VentasXusuarioForm" />
+        <form-bean name="refinanciacionForm" type="cl.ripley.GestionTV.struts.form.RefinanciacionForm" />
+        <form-bean name="reporteStockExcelForm" type="cl.ripley.GestionTV.struts.form.ReporteStockExcelForm" />
+		<form-bean name="borradoPromocionesForm" type="cl.ripley.GestionTV.struts.form.BorradoPromocionesForm"/>
+		<form-bean name="cargaVentasWCForm" type="cl.ripley.GestionTV.struts.form.CargaVentasWCForm"/>
+		<form-bean name="limpiezaBolsaCompraForm" type="cl.ripley.GestionTV.struts.form.LimpiezaBolsaCompraForm"/>
+		<form-bean name="treRMCForm" type="cl.ripley.GestionTV.struts.form.TRE_RMCForm"/>
+
+
+    </form-beans>
+    
+    <!-- ========== Global Exception Definitions ============================== -->
+    <global-exceptions />
+    
+    <!-- ========== Global Forward Definitions =============================== -->
+    <global-forwards>
+        <forward name="cancelar" path="/GestionTV_centro.jsp" />
+        <forward name="doIndex" path="/pages/GestionTV_index.jsp" />
+        <forward name="doInicioVisitas" path="/visitas.do" />
+        <forward name="doInicioPedidos" path="/pedidos.do" />
+        <forward name="doInicioTarjetaRipley" path="/tarjetaripley.do" />
+        <forward name="doInicioProductoSinStock" path="/productosinstock.do" />
+        <forward name="doInicioProductoConStock" path="/productoconstock.do" />
+        <forward name="doInicioTodosProductos" path="/todosproductos.do" />
+        <forward name="doInicioBundles" path="/bundles.do" />
+        <forward name="doInicioTarjetaBancaria" path="/tarjetabancaria.do" />
+        <forward name="doInicioTodasVentas" path="/todasventas.do" />
+        <forward name="doInicioDetalleProducto" path="/detalleproducto.do" />
+        <forward name="doInicioReporteRegalo" path="/reporteregalo.do" />
+        <forward name="doInicioFonoComprasMes" path="/fonocompra.do" />
+        <forward name="doInicioProductos" path="/productos.do" />
+        <forward name="doInicioCatalogos" path="/catalogos.do" />
+        <forward name="doInicioPromociones" path="/promociones.do" />
+        <forward name="doInicioAsociaciones" path="/asociaciones.do" />
+        <forward name="doInicioZonas" path="/zonas.do" />
+        <forward name="doInicioCargas" path="/cargas.do" />
+        <forward name="doInicioPopup" path="/popup.do" />
+        <forward name="doInicioLog" path="/muestralog.do" />
+        <forward name="doInicioClientescar" path="/clientescar.do" />
+        <forward name="reload" path="/pages/reload.txt" />
+        <forward name="timeOut" path="/pages/timeOut.jsp" />
+        <forward name="errorBD" path="/pages/ErrorBD.jsp" />
+        <forward name="doBanco" path="/banco.do" />      
+        <forward name="doFonoCompra" path="/vtafonocompra.do" />      
+        <forward name="doRipleyDatos" path="/tarjetaripleydatos.do" />      
+        <forward name="doProdChannel" path="/productosRChannel.do" />              
+        <forward name="doReport" path="/Report.do" />
+        <forward name="doInicioCargaStockBT" path="/cargastockbt.do" />        
+        <forward name="doInicioReporteStockBTTV" path="/reporteStockBtTv.do" /> 
+        <forward name="doSavReporte" path="/savReporte.do" /> 
+		<forward name="doActivacionGCP" path="/activacionGCP.do" /> 
+		<forward name="doActualizaFechaBoleta" path="/actualizaFechaBoleta.do" />
+		<forward name="doAuditoriaGCP" path="/auditoriaGCP.do" />
+		<forward name="doAperturaCierreGCP" path="/aperturaCierreGCP.do" />
+		<forward name="doReporteRMC" path="/ReporteRMC.do" />
+		<forward name="doBusquedaRMC" path="/BusquedaRMC.do" />
+		<forward name="doCierreActivacionGCP" path="/cierreActivacionGCP.do" />
+		<forward name="doInicioVentasXusuario" path="/ventasXusuario.do" />
+		<forward name="doInicioRefinanciacion" path="/refinanciacion.do" />
+		<forward name="doInicioReporteStockExcel" path="/reporteStockExcel.do" />
+		<forward name="doInicioBorradoPromociones" path="/borradoPromociones.do" />
+		<forward name="doInicioCargaVentasWC" path="/cargaVentasWC.do" />
+		<forward name="doInicioLimpiezaBolsaCompra" path="/limpiezaBolsaCompra.do" />
+		<forward name="doInicioTRE_RMC" path="/tre_rmc.do" />
+		
+		
+		
+    </global-forwards>
+    
+    <!-- ========== Action Mapping Definitions =============================== -->
+    <action-mappings>
+        <action
+            attribute="menuForm"
+            input="/pages/GestionTV_menu.jsp"
+            name="menuForm"
+            path="/menu"
+            type="cl.ripley.GestionTV.struts.action.MenuAction" />
+        <action
+            attribute="visitasForm"
+            input="/pages/Visitas.jsp"
+            name="visitasForm"
+            path="/visitas"
+            type="cl.ripley.GestionTV.struts.action.VisitasAction">
+            <forward name="iniciar" path="/pages/Visitas.jsp" />
+        </action>
+        <action
+            attribute="pedidosForm"
+            input="/pages/Pedidos.jsp"
+            name="pedidosForm"
+            path="/pedidos"
+            type="cl.ripley.GestionTV.struts.action.PedidosAction">
+            <forward name="iniciar" path="/pages/Pedidos.jsp" />
+        </action>
+        <action
+            attribute="tarjetaripleyForm"
+            input="/pages/TarjetaRipley.jsp"
+            name="tarjetaripleyForm"
+            path="/tarjetaripley"
+            type="cl.ripley.GestionTV.struts.action.TarjetaRipleyAction">
+            <forward name="iniciar" path="/pages/TarjetaRipley.jsp" />
+        </action>
+        <action
+            attribute="tarjetabancariaForm"
+            input="/pages/TarjetaBancaria.jsp"
+            name="tarjetabancariaForm"
+            path="/tarjetabancaria"
+            type="cl.ripley.GestionTV.struts.action.TarjetaBancariaAction">
+            <forward name="iniciar" path="/pages/TarjetaBancaria.jsp" />
+        </action>
+        <action
+            attribute="todasventasForm"
+            input="/pages/TodasVentas.jsp"
+            name="todasventasForm"
+            path="/todasventas"
+            type="cl.ripley.GestionTV.struts.action.TodasVentasAction">
+            <forward name="iniciar" path="/pages/TodasVentas.jsp" />
+        </action>
+        <action
+            attribute="detalleproductoForm"
+            input="/pages/DetalleVentas.jsp"
+            name="detalleproductoForm"
+            path="/detalleproducto"
+            type="cl.ripley.GestionTV.struts.action.DetalleProductoAction">
+            <forward name="iniciar" path="/pages/DetalleProducto.jsp" />
+        </action>
+               
+        <action
+            attribute="ReporteStock_BT_TvForm"
+            input="/pages/ReporteStock_BT_TV.jsp"
+            name="ReporteStock_BT_TvForm"
+            path="/reporteStockBtTv"
+            type="cl.ripley.GestionTV.struts.action.ReporteStock_BT_TvAction">
+            <forward name="iniciar" path="/pages/ReporteStock_BT_TV.jsp" />
+        </action>
+        
+        <action
+            attribute="reporteregaloForm"
+            input="/pages/ReporteRegalo.jsp"
+            name="reporteregaloForm"
+            path="/reporteregalo"
+            type="cl.ripley.GestionTV.struts.action.ReporteRegaloAction">
+            <forward name="iniciar" path="/pages/ReporteRegalo.jsp" />
+        </action>
+        <action
+            attribute="cargaStockBTForm"
+            input="/pages/CargaStockBT.jsp"
+            name="cargaStockBTForm"
+            path="/cargastockbt"
+            type="cl.ripley.GestionTV.struts.action.CargaStockBTAction">
+            <forward name="iniciar" path="/pages/CargaStockBT.jsp" />
+        </action>
+        <action
+            attribute="fonocompraForm"
+            input="/pages/FonoCompra.jsp"
+            name="fonocompraForm"
+            path="/fonocompra"
+            type="cl.ripley.GestionTV.struts.action.FonoCompraAction">
+            <forward name="iniciar" path="/pages/FonoCompra.jsp" />
+        </action>
+        <action
+            attribute="productoconstockForm"
+            input="/pages/ProductoConStock.jsp"
+            name="productoconstockForm"
+            path="/productoconstock"
+            type="cl.ripley.GestionTV.struts.action.ProductoConStockAction">
+            <forward name="productoconstock" path="/pages/ProductoConStock.jsp" />
+        </action>
+        <action
+            attribute="productosinstockForm"
+            input="/pages/ProductoSinStock.jsp"
+            name="productosinstockForm"
+            path="/productosinstock"
+            type="cl.ripley.GestionTV.struts.action.ProductoSinStockAction">
+            <forward name="productosinstock" path="/pages/ProductoSinStock.jsp" />
+        </action>
+        <action
+            attribute="bundlesForm"
+            input="/pages/Bundles.jsp"
+            name="bundlesForm"
+            path="/bundles"
+            type="cl.ripley.GestionTV.struts.action.BundlesAction"
+            validate="false">
+            <forward name="iniciar" path="/pages/Bundles.jsp" />
+        </action>
+        <action
+            attribute="todosproductosForm"
+            input="/pages/TodosProductos.jsp"
+            name="todosproductosForm"
+            path="/todosproductos"
+            type="cl.ripley.GestionTV.struts.action.TodosProductosAction"
+            validate="false">
+            <forward name="todosproductos" path="/pages/TodosProductos.jsp" />
+        </action>
+        <action
+            attribute="productosForm"
+            input="/pages/Productos.jsp"
+            name="productosForm"
+            path="/productos"
+            type="cl.ripley.GestionTV.struts.action.ProductosAction"
+            validate="false">
+            <forward name="iniciar" path="/pages/Productos.jsp" />
+        </action>
+        <action
+            attribute="catalogosForm"
+            input="/pages/Catalogos.jsp"
+            name="catalogosForm"
+            path="/catalogos"
+            type="cl.ripley.GestionTV.struts.action.CatalogosAction"
+            validate="false">
+            <forward name="iniciar" path="/pages/Catalogos.jsp" />
+        </action>
+        <action
+            attribute="promocionesForm"
+            input="/pages/Promociones.jsp"
+            name="promocionesForm"
+            path="/promociones"
+            type="cl.ripley.GestionTV.struts.action.PromocionesAction"
+            validate="false">
+            <forward name="iniciar" path="/pages/Promociones.jsp" />
+        </action>
+        <action
+            attribute="asociacionesForm"
+            input="/pages/Asociaciones.jsp"
+            name="asociacionesForm"
+            path="/asociaciones"
+            type="cl.ripley.GestionTV.struts.action.AsociacionesAction"
+            validate="false">
+            <forward name="iniciar" path="/pages/Asociaciones.jsp" />
+        </action>
+        <action
+            attribute="cargasForm"
+            input="/pages/Cargas.jsp"
+            name="cargasForm"
+            path="/cargas"
+            type="cl.ripley.GestionTV.struts.action.CargasAction">
+            <forward name="iniciar" path="/pages/Cargas.jsp" />
+        </action>
+        <action
+            attribute="zonasForm"
+            input="/pages/Zonas.jsp"
+            name="zonasForm"
+            path="/zonas"
+            type="cl.ripley.GestionTV.struts.action.ZonasAction"
+            validate="false">
+            <forward name="iniciar" path="/pages/Zonas.jsp" />
+        </action>
+        <action
+            attribute="muestralogForm"
+            input="/pages/MuestraLog.jsp"
+            name="muestralogForm"
+            path="/muestralog"
+            type="cl.ripley.GestionTV.struts.action.MuestraLogAction"
+            validate="false">
+            <forward name="iniciar" path="/pages/MuestraLog.jsp" />
+        </action>
+        <action
+            attribute="popupForm"
+            input="/pages/Popup.jsp"
+            name="popupForm"
+            path="/popup"
+            type="cl.ripley.GestionTV.struts.action.PopupAction">
+            <forward name="iniciar" path="/pages/Popup.jsp" />
+            <forward name="agregar" path="/pages/AgregarPopup.jsp" />
+            <forward name="modificar" path="/pages/Popup.jsp" />
+            <forward name="volver" path="/pages/Popup.jsp" />
+        </action>
+        <action
+            attribute="clientescarForm"
+            input="/pages/Clientescar.jsp"
+            name="clientescarForm"
+            path="/clientescar"
+            type="cl.ripley.GestionTV.struts.action.ClientescarAction"
+            validate="false">
+            <forward name="iniciar" path="/pages/Clientescar.jsp" />
+        </action>
+        <action
+            attribute="bancoForm"
+            input="/pages/vta_banco.jsp"
+            name="bancoForm"
+            path="/banco"
+            type="cl.ripley.GestionTV.struts.action.VtaBancoAction"
+            validate="false">
+            <forward name="grilla" path="/pages/vta_banco.jsp" />
+            <forward name="ingresar" path="/pages/vta_bancoIng.jsp" />
+            <forward name="modificar" path="/pages/vta_bancoMod.jsp" />
+            <forward name="grillaadm" path="/pages/vta_adm.jsp" />
+            <forward name="modificaradm" path="/pages/vta_admMod.jsp" />
+        </action>
+        <action
+            attribute="vtafonocompraForm"
+            input="/pages/vta_fonocompra.jsp"
+            name="vtafonocompraForm"
+            path="/vtafonocompra"
+            type="cl.ripley.GestionTV.struts.action.VtaFonoCompraAction"
+            validate="false">
+            <forward name="inicio" path="/pages/vta_fonocompra.jsp" />
+            <forward name="modificar" path="/pages/vta_fonocompraMod.jsp" />
+        </action>
+        <action
+            attribute="tarjetaripleydatosForm"
+            input="/pages/TarjetaRipleyDatos.jsp"
+            name="tarjetaripleydatosForm"
+            path="/tarjetaripleydatos"
+            type="cl.ripley.GestionTV.struts.action.TarjetaRipleyDatosAction"
+            validate="false">
+            <forward name="inicio" path="/pages/TarjetaRipleyDatos.jsp" />
+        </action>
+        <action
+            attribute="productosRChannelForm"
+            input="/pages/ProductosRChannel.jsp"
+            name="productosRChannelForm"
+            path="/productosRChannel"
+            type="cl.ripley.GestionTV.struts.action.ProductosRChannelAction"
+            validate="false">
+            <forward name="inicio" path="/pages/ProductosRChannel.jsp" />
+        </action>
+	 	<action 
+			name="jreportForm" 
+			path="/Report" 
+			type="cl.ripley.GestionTV.struts.action.JReportAction">
+		    <forward name="report" path="/pages/frmReport.jsp" redirect="true"/>
+        </action>
+        <action 
+        	attribute="productosRChannelForm"
+            input="/pages/ProductosRChannel.jsp"
+            name="productosRChannelForm"
+			path="/GenerarPDF" 
+			type="cl.ripley.GestionTV.struts.action.GenerarPDFAction"
+			validate="false">
+        </action>
+        
+        <action
+            attribute="savReporteForm"
+            input="/pages/SavReporte.jsp"
+            name="savReporteForm"
+            path="/savReporte"
+            type="cl.ripley.GestionTV.struts.action.SavReporteAction">
+            <forward name="iniciar" path="/pages/SavReporte.jsp" />
+        </action>
+        
+        <action
+            attribute="activacionGCPForm"
+            input="/pages/ActivacionGCP.jsp"
+            name="activacionGCPForm"
+            path="/activacionGCP"
+            type="cl.ripley.GestionTV.struts.action.ActivacionGCPAction">
+            <forward name="iniciar" path="/pages/ActivacionGCP.jsp" />
+        </action>
+        
+        <action
+            attribute="actualizaFechaBoletaForm"
+            input="/pages/ActualizaFechaBoleta.jsp"
+            name="actualizaFechaBoletaForm"
+            path="/actualizaFechaBoleta"
+            type="cl.ripley.GestionTV.struts.action.ActualizaFechaBoletaAction">
+            <forward name="iniciar" path="/pages/ActualizaFechaBoleta.jsp" />
+        </action>
+        
+        <action
+            attribute="auditoriaGCPForm"
+            input="/pages/AuditoriaGCP.jsp"
+            name="auditoriaGCPForm"
+            path="/auditoriaGCP"
+            type="cl.ripley.GestionTV.struts.action.AuditoriaGCPAction">
+            <forward name="iniciar" path="/pages/AuditoriaGCP.jsp" />
+        </action>
+        
+        <action
+            attribute="reporteRMCForm"
+            input="/pages/RMCUsuarios.jsp"
+            name="reporteRMCForm"
+            path="/ReporteRMC"
+            type="cl.ripley.GestionTV.struts.action.ReporteRMCAction">
+            <forward name="iniciar" path="/pages/RMCUsuarios.jsp" />
+        </action>
+        
+        <action
+            attribute="aperturaCierreGCPForm"
+            input="/pages/AperturaCierreGCP.jsp"
+            name="aperturaCierreGCPForm"
+            path="/aperturaCierreGCP"
+            type="cl.ripley.GestionTV.struts.action.AperturaCierreGCPAction">
+            <forward name="iniciar" path="/pages/AperturaCierreGCP.jsp" />
+        </action>
+        
+        <action
+            attribute="cierreActivacionGCPForm"
+            input="/pages/CierreActivacionGCP.jsp"
+            name="cierreActivacionGCPForm"
+            path="/cierreActivacionGCP"
+            type="cl.ripley.GestionTV.struts.action.CierreActivacionGCPAction">
+            <forward name="iniciar" path="/pages/CierreActivacionGCP.jsp" />
+        </action>
+        
+        <action
+            attribute="busquedaRMCForm"
+            input="/pages/BusquedaRMCUsuarios.jsp"
+            name="busquedaRMCForm"
+            path="/BusquedaRMC"
+            type="cl.ripley.GestionTV.struts.action.BusquedaRMCAction">
+            <forward name="iniciar" path="/pages/BusquedaRMCUsuarios.jsp" />
+        </action>
+        
+        <action
+            attribute="ventasXusuarioForm"
+            input="/pages/ventasXusuario.jsp"
+            name="ventasXusuarioForm"
+            path="/ventasXusuario"
+            type="cl.ripley.GestionTV.struts.action.VentasXusuarioAction">
+            <forward name="iniciar" path="/pages/ventasXusuario.jsp" />
+        </action>
+        
+        
+        <action
+            attribute="refinanciacionForm"
+            input="/pages/Refinanciacion.jsp"
+            name="refinanciacionForm"
+            path="/refinanciacion"
+            type="cl.ripley.GestionTV.struts.action.RefinanciacionAction">
+            <forward name="iniciar" path="/pages/Refinanciacion.jsp" />
+        </action>
+        
+        <action
+            attribute="reporteStockExcelForm"
+            input="/pages/reporteStockExcel.jsp"
+            name="reporteStockExcelForm"
+            path="/reporteStockExcel"
+            type="cl.ripley.GestionTV.struts.action.ReporteStockExcelAction">
+            <forward name="iniciar" path="/pages/reporteStockExcel.jsp" />
+        </action>
+        
+        <action
+            attribute="borradoPromocionesForm"
+            input="/pages/BorradoPromociones.jsp"
+            name="borradoPromocionesForm"
+            path="/borradoPromociones"
+            type="cl.ripley.GestionTV.struts.action.BorradoPromocionesAction">
+            <forward name="iniciar" path="/pages/BorradoPromociones.jsp" />
+        </action>
+        
+        <action
+            attribute="cargaVentasWCForm"
+            input="/pages/CargaVentasWC.jsp"
+            name="cargaVentasWCForm"
+            path="/cargaVentasWC"
+            type="cl.ripley.GestionTV.struts.action.CargaVentasWCAction">
+            <forward name="iniciar" path="/pages/CargaVentasWC.jsp" />
+        </action>
+        
+        <action
+            attribute="limpiezaBolsaCompraForm"
+            input="/pages/LimpiezaBolsaCompra.jsp"
+            name="limpiezaBolsaCompraForm"
+            path="/limpiezaBolsaCompra"
+            type="cl.ripley.GestionTV.struts.action.LimpiezaBolsaCompraAction">
+            <forward name="iniciar" path="/pages/LimpiezaBolsaCompra.jsp" />
+        </action>
+        
+        <action
+            attribute="treRMCForm"
+            input="/pages/TRE_RMC.jsp"
+            name="treRMCForm"
+            path="/tre_rmc"
+            type="cl.ripley.GestionTV.struts.action.TRE_RMCAction">
+            <forward name="iniciar" path="/pages/TRE_RMC.jsp" />
+        </action>
+        
+    </action-mappings>
+    
+    <!-- ========== Controller Configuration ================================ -->
+    <controller />
+    
+    <!-- ========== Message Resources Definitions ============================ -->
+    
+    <!-- ========== Plug Ins Configuration ================================= -->
+    <message-resources parameter="cl.ripley.GestionTV.struts.msgGestionTV" />
+</struts-config>
+
